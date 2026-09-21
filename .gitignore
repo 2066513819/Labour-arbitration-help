@@ -1,0 +1,55 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ===== Node / Frontend =====
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Secrets / Environment（切勿提交真实密钥） =====
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ===== Database（含用户数据，勿提交） =====
+*.db
+*.sqlite
+*.sqlite3
+backend/labor_arb.db
+
+# ===== Uploads（保留目录，忽略内容） =====
+uploads/*
+!uploads/.gitkeep
+
+# ===== Logs =====
+*.log
+app.log
+
+# ===== IDE / Editor / 本地工具目录 =====
+.idea/
+.vscode/
+.codebuddy/
+.workbuddy/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Build artifacts / Source maps =====
+*.map

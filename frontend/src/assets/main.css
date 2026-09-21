@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --arb-radius: 14px;
+  --arb-transition: 240ms ease;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 min-h-screen;
+  background-image: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.06), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(16, 185, 129, 0.05), transparent 35%);
+}
+
+.dark body {
+  @apply bg-slate-900 text-slate-100;
+}
+
+.arb-paper {
+  @apply bg-white rounded-[var(--arb-radius)] shadow-card border border-slate-100/80;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.98));
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--arb-transition);
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all var(--arb-transition);
+}
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
